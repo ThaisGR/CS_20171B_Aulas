@@ -14,7 +14,7 @@ namespace Models
         public virtual Aluno _Aluno { get; set; }
 
         public int CursoID { get; set; }
-        public virtual Curso _Curso { get; set; }
+        //public virtual Curso _Curso { get; set; }
 
         public DateTime Data { get; set; }
 
