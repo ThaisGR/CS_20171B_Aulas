@@ -28,11 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.rvRelatorios = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.SuspendLayout();
+            // 
+            // rvRelatorios
+            // 
+            this.rvRelatorios.Location = new System.Drawing.Point(13, 13);
+            this.rvRelatorios.Name = "rvRelatorios";
+            this.rvRelatorios.Size = new System.Drawing.Size(693, 351);
+            this.rvRelatorios.TabIndex = 0;
+            // 
+            // TelaInicial
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(724, 393);
+            this.Controls.Add(this.rvRelatorios);
+            this.Name = "TelaInicial";
             this.Text = "TelaInicial";
+            this.Load += new System.EventHandler(this.TelaInicial_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private Microsoft.Reporting.WinForms.ReportViewer rvRelatorios;
+
     }
 }

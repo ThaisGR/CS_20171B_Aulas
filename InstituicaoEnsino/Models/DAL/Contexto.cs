@@ -11,7 +11,8 @@ namespace Models.DAL
     {
         public Contexto() : base("strConn")
         {
-
+            //Database.SetInitializer<Contexto>(
+            //    new DropCreateDatabaseAlways<Contexto>());
         }
         
         public DbSet<Aluno> Alunos { get; set; }

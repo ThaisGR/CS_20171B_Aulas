@@ -56,5 +56,13 @@ namespace Controllers2
                 }
             }
         }
+
+        public static List<Aluno> ListarTodos()
+        {
+            using (Contexto ctx = new Contexto())
+            {
+                return ctx.Alunos.ToList();
+            }
+        }
     }
 }
